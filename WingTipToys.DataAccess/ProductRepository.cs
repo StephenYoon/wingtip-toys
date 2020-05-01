@@ -6,6 +6,11 @@ using WingTipToys.Models;
 
 namespace WingTipToys.DataAccess
 {
+    /// <summary>
+    /// Product Repository class providing access to our application data.
+    /// TODO: Currently mock data, but we can install EntityFramework and connect 
+    ///       to SQL Server as a data source.
+    /// </summary>
     public class ProductRepository : IProductRepository
     {
         public IEnumerable<Product> GetAll()
