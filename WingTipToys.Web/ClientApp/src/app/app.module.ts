@@ -5,10 +5,17 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { NavMenuComponent } from './product-catalog/nav-menu/nav-menu.component';
+import { HomeComponent } from './product-catalog/home/home.component';
+import { CounterComponent } from './product-catalog/counter/counter.component';
+import { FetchDataComponent } from './product-catalog/fetch-data/fetch-data.component';
+
+/* 
+  TODO: We can utilize lazy loading by route when the application grows larger in size
+        to reduce the what the user has to load if certain features aren't used
+        all the time.
+        Reference: https://angular.io/guide/lazy-loading-ngmodules
+*/
 
 @NgModule({
   declarations: [
