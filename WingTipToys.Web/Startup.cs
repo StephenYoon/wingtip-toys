@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WingTipToys.DataAccess;
+using WingTipToys.DataAccess.Interfaces;
+using WingTipToys.Service;
+using WingTipToys.Service.Interfaces;
 
 namespace WingTipToys.Web
 {
@@ -20,6 +24,11 @@ namespace WingTipToys.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // Add dependencies
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductService, ProductService>();
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
