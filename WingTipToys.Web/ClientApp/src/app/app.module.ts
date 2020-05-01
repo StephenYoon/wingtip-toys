@@ -9,6 +9,8 @@ import { NavMenuComponent } from './product-catalog/nav-menu/nav-menu.component'
 import { HomeComponent } from './product-catalog/home/home.component';
 import { CounterComponent } from './product-catalog/counter/counter.component';
 import { FetchDataComponent } from './product-catalog/fetch-data/fetch-data.component';
+import { SideMenuComponent } from './product-catalog/side-menu/side-menu.component';
+import { MainContentComponent } from './product-catalog/main-content/main-content.component';
 
 /* 
   TODO: We can utilize lazy loading by route when the application grows larger in size
@@ -23,7 +25,9 @@ import { FetchDataComponent } from './product-catalog/fetch-data/fetch-data.comp
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    SideMenuComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
