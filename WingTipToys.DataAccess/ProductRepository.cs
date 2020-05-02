@@ -41,33 +41,9 @@ namespace WingTipToys.DataAccess
         {
             var data = new List<Product>()
             {
-                new Product 
-                { 
-                    Id = 1, 
-                    Name = "Chevy Camaro SS toy", 
-                    UnitPrice = 25.99m, 
-                    ImageUrl = "https://static.summitracing.com/global/images/prod/xlarge/rla-aw243_uu_xl.jpg", 
-                    Type = ProductType.Cars 
-                },
-                new Product 
-                { 
-                    Id = 2,
-                    Name = "Ford Mustang 5.0 toy", 
-                    UnitPrice = 20.99m, 
-                    ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/61kRyEKfzUL._AC_SX425_.jpg", 
-                    Type = ProductType.Cars 
-                },
-                new Product 
-                { 
-                    Id = 3,
-                    Name = "Dodge Challender Hellcat toy", 
-                    UnitPrice = 28.99m, 
-                    ImageUrl = "https://www.dhresource.com/0x0/f2/albu/g8/M01/4E/11/rBVaVFyVormAGBQWAAEUtQEx870249.jpg", 
-                    Type = ProductType.Cars
-                },
                 new Product
                 {
-                    Id = 4,
+                    Id = 1,
                     Name = "Jeep Wrangler Rubicon",
                     UnitPrice = 67.50m,
                     ImageUrl = "https://www.wallpaperup.com/uploads/wallpapers/2014/07/10/393467/f81e3e63d16076d51688e9802c573f79.jpg",
@@ -75,10 +51,34 @@ namespace WingTipToys.DataAccess
                 },
                 new Product
                 {
-                    Id = 5,
+                    Id = 2,
                     Name = "Toyota Supra",
                     UnitPrice = 63.21m,
                     ImageUrl = "https://cnet2.cbsistatic.com/img/rZMNDzGaH70YeWkRQrTfPl_H--Y=/940x0/2020/02/12/99823121-7ef6-4d35-b781-ef97aa11e5ff/2021-toyota-supra-2-0-promo.jpg",
+                    Type = ProductType.Cars
+                },
+                new Product 
+                { 
+                    Id = 3, 
+                    Name = "Chevy Camaro SS", 
+                    UnitPrice = 25.99m, 
+                    ImageUrl = "https://static.carsdn.co/cldstatic/wp-content/uploads/2020-Chevrolet-Camaro-SS-OEM.jpg", 
+                    Type = ProductType.Cars 
+                },
+                new Product 
+                { 
+                    Id = 4,
+                    Name = "Ford Mustang 5.0 toy", 
+                    UnitPrice = 20.99m, 
+                    ImageUrl = "https://images-na.ssl-images-amazon.com/images/I/61kRyEKfzUL._AC_SX425_.jpg", 
+                    Type = ProductType.Cars 
+                },
+                new Product 
+                { 
+                    Id = 5,
+                    Name = "Dodge Challender Hellcat toy", 
+                    UnitPrice = 28.99m, 
+                    ImageUrl = "https://www.dhresource.com/0x0/f2/albu/g8/M01/4E/11/rBVaVFyVormAGBQWAAEUtQEx870249.jpg", 
                     Type = ProductType.Cars
                 },
                 new Product 
