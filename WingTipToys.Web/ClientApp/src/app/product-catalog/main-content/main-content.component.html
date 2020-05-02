@@ -1,1 +1,26 @@
-<p>main-content works!</p>
+<div class="main-content-container">
+
+  <h4 class="header">Products</h4>
+
+  <!--Bootstrap card for displaying a product item-->
+  <div>
+    <div class="card" *ngFor="let product of filteredProducts()">
+      <img class="card-img-top product-image" [src]="product.imageUrl" alt="Card image cap">
+      <div class="card-body">
+
+        <div class="card-title">
+          <section>{{ product.name }}</section>
+          <section class="price">{{product.unitPrice | currency}}</section>
+        </div>
+
+        <div class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </div>
+
+        <!--Hidden field for the Product ID-->
+        <p hidden>{{product.id}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

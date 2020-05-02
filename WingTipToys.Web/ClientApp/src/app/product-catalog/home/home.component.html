@@ -10,9 +10,15 @@
     </div>
 
     <!--Right side-->
-    <div class="col-7 main-content">
-      <app-main-content>        
-      </app-main-content>
+    <div class="col-7 main-content">      
+      <!--Ensure we have the data before rendering the main content-->
+      <div *ngIf="!!(products$ | async)">
+        <app-main-content 
+          [products]="products$ | async"
+          [selectedProductTypeId]="selectedProductTypeId"
+        >
+        </app-main-content>
+      </div>
     </div>
 
   </div>
