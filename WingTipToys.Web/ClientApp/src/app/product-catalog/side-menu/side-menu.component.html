@@ -1,1 +1,19 @@
-<p>side-menu works!</p>
+<div class="side-menu-container">
+  <h4 class="header">Product Type</h4>
+  
+  <!--TODO: Iterate from a source to generate this template programmatically-->
+  <ul>
+    <li class="clickable" (click)="selectType(0)">
+      <span>All Products</span>
+    </li>
+    <li class="clickable" (click)="selectType(3)">
+      <span>Boardgames</span>
+    </li>
+    <li class="clickable" (click)="selectType(1)">
+      <span>Cars</span>
+    </li>
+    <li class="clickable" (click)="selectType(2)">
+      <span>Sports</span>
+    </li>
+  </ul>
+</div>

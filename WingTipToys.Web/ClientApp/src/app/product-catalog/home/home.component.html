@@ -4,8 +4,8 @@
   <div class="row h-100 pt-3">
 
     <!--Left side-->
-    <div class="col-5 side-menu">      
-      <app-side-menu>
+    <div class="col-5 side-menu">
+      <app-side-menu (selectedProductType)="onProductTypeChange($event)">
       </app-side-menu>
     </div>
 

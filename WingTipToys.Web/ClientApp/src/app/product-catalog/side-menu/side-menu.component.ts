@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-side-menu',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-menu.component.scss']
 })
 export class SideMenuComponent implements OnInit {
+  @Output() selectedProductType = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  
+  selectType(typeId: number): void {
+    this.selectedProductType.emit(typeId);
+  }
 }
