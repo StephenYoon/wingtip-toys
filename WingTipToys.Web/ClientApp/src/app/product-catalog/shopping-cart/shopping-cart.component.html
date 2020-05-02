@@ -1,0 +1,32 @@
+<div class="shopping-cart-container">
+
+  <h4 class="header">Shopping Cart <span class="price">{{getSubTotal() | currency}}</span></h4>
+
+    <div class="shopping-cart-contents">
+
+      <!--Cart contents-->
+      <div *ngIf="(shoppingCart && shoppingCart.items) else emptyCart" class="row">
+        <div *ngFor="let cartItem of getShoppingCartContents()" class="cart-item">
+
+          <div class="col-7">
+            <span>{{ cartItem.productItem.name }}</span>
+          </div>
+          
+          <div class="col-2">
+            <span class="price">{{cartItem.productItem.unitPrice | currency}}</span>
+          </div>
+          <div class="col-3">
+            <span>Qty: {{ cartItem.quantity }}</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!--Cart is emtpy-->
+      <ng-template #emptyCart>
+        Empty shopping cart
+      </ng-template>
+
+    </div>
+
+</div>

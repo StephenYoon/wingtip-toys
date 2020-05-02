@@ -1,0 +1,27 @@
+.shopping-cart-container {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        padding-right: 2.5rem;
+    }
+
+    .cart-item {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        padding: 0 0 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .price {
+        color: green;
+        font-weight: bold;
+    }
+}

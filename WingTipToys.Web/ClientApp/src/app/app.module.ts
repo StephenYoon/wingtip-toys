@@ -11,6 +11,7 @@ import { CounterComponent } from './product-catalog/counter/counter.component';
 import { FetchDataComponent } from './product-catalog/fetch-data/fetch-data.component';
 import { SideMenuComponent } from './product-catalog/side-menu/side-menu.component';
 import { MainContentComponent } from './product-catalog/main-content/main-content.component';
+import { ShoppingCartComponent } from './product-catalog/shopping-cart/shopping-cart.component';
 
 /* 
   TODO: We can utilize lazy loading by route when the application grows larger in size
@@ -27,7 +28,8 @@ import { MainContentComponent } from './product-catalog/main-content/main-conten
     CounterComponent,
     FetchDataComponent,
     SideMenuComponent,
-    MainContentComponent
+    MainContentComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

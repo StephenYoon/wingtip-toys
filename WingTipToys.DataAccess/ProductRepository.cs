@@ -69,7 +69,7 @@ namespace WingTipToys.DataAccess
                 {
                     Id = 4,
                     Name = "Jeep Wrangler Rubicon",
-                    UnitPrice = 67370.00m,
+                    UnitPrice = 67.50m,
                     ImageUrl = "https://www.wallpaperup.com/uploads/wallpapers/2014/07/10/393467/f81e3e63d16076d51688e9802c573f79.jpg",
                     Type = ProductType.Cars
                 },
@@ -77,7 +77,7 @@ namespace WingTipToys.DataAccess
                 {
                     Id = 5,
                     Name = "Toyota Supra",
-                    UnitPrice = 63450.00m,
+                    UnitPrice = 63.21m,
                     ImageUrl = "https://cnet2.cbsistatic.com/img/rZMNDzGaH70YeWkRQrTfPl_H--Y=/940x0/2020/02/12/99823121-7ef6-4d35-b781-ef97aa11e5ff/2021-toyota-supra-2-0-promo.jpg",
                     Type = ProductType.Cars
                 },
