@@ -5,7 +5,10 @@
 
     <!--Left side-->
     <div class="col-5 side-menu">
-      <app-side-menu (selectedProductType)="onProductTypeChange($event)">
+      <app-side-menu 
+        [selectedProductTypeId]="selectedProductTypeId"
+        (selectedProductType)="onProductTypeChange($event)"
+      >
       </app-side-menu>
     </div>
 

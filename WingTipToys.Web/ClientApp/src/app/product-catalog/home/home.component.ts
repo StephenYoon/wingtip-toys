@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/models/product';
+import { ProductType } from 'src/app/models/product-type';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,8 @@ export class HomeComponent implements OnInit {
   constructor(private productService: ProductService){}
 
   ngOnInit(): void {
-    this.products$ = this.productService.getProducts();
+    this.selectedProductTypeId = ProductType.Cars;
+    this.products$ = this.productService.getProducts();    
   }
 
   onProductTypeChange(typeId: number): void {

@@ -3,16 +3,16 @@
   
   <!--TODO: Iterate from a source to generate this template programmatically-->
   <ul>
-    <li class="clickable" (click)="selectType(0)">
+    <li class="clickable" (click)="selectType(0)" [class.selected]="selectedProductTypeId === 0">
       <span>All Products</span>
     </li>
-    <li class="clickable" (click)="selectType(3)">
+    <li class="clickable" (click)="selectType(3)" [class.selected]="selectedProductTypeId === 3">
       <span>Boardgames</span>
     </li>
-    <li class="clickable" (click)="selectType(1)">
+    <li class="clickable" (click)="selectType(1)" [class.selected]="selectedProductTypeId === 1">
       <span>Cars</span>
     </li>
-    <li class="clickable" (click)="selectType(2)">
+    <li class="clickable" (click)="selectType(2)" [class.selected]="selectedProductTypeId === 2">
       <span>Sports</span>
     </li>
   </ul>
