@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './product-catalog/nav-menu/nav-menu.component';
 import { HomeComponent } from './product-catalog/home/home.component';
-import { CounterComponent } from './product-catalog/counter/counter.component';
-import { FetchDataComponent } from './product-catalog/fetch-data/fetch-data.component';
 import { SideMenuComponent } from './product-catalog/side-menu/side-menu.component';
 import { MainContentComponent } from './product-catalog/main-content/main-content.component';
 import { ShoppingCartComponent } from './product-catalog/shopping-cart/shopping-cart.component';
@@ -25,8 +23,6 @@ import { ShoppingCartComponent } from './product-catalog/shopping-cart/shopping-
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     SideMenuComponent,
     MainContentComponent,
     ShoppingCartComponent
@@ -37,8 +33,6 @@ import { ShoppingCartComponent } from './product-catalog/shopping-cart/shopping-
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
   providers: [],
