@@ -15,8 +15,8 @@ Angular in particular, an opensource JavaScript framework designed for building 
 
 ## Local development
 To run this locally:
-- clone this repo
-- open `WingTipToys.Web.sln` in the root folder wtih Visual Studio 2019
+- Clone this repository.
+- Open `WingTipToys.Web.sln` in the root folder wtih Visual Studio 2019.
 - **Debug** run with `IIS Express` or select `WingTipToys` in the **Debug** run dropdown and run!
   - NOTE: on first run it may take a minute or so as the solution will install project dependencies.
 
