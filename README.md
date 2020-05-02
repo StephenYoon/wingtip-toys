@@ -21,11 +21,13 @@ To run this locally:
   - NOTE: on first run it may take a minute or so as the solution will install project dependencies.
 
 ## Overview of solution
-The solution was organized to help with separation of concerns.
+The solution was organized to help with separation of concerns. A few things I would address next would be to create DTO models within the Web project to de-couple the web models from the backend API models.  Additionally, I would also create entity models that would represent the database within the DataAccess project.
+
 - **Models** is responsible for defining the data models that may be used in the various projects of the solution.
 - **DataAccess** is responsible for any CRUD operation with the data.
 - **Service** is responsible for handling of the data between the API endpoints and the DataAccess.
 - **Web** is responsible for providing access to the resources the `ClientApp` may require.
+
 ![](wingtip-toys-solution.jpg)
 
 ## Quick demo of running the solution and the unit tests
