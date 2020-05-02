@@ -16,6 +16,11 @@ export class MainContentComponent implements OnInit {
   ngOnInit() {
   }
 
+  addToCart(productId: number): void {
+    console.debug(`Emitted product to add Id: ${productId} to the shopping cart.`)
+    this.addProductId.emit(productId);
+  }
+  
   filteredProducts(): Product[] {
     if (!this.selectedProductTypeId) {
       return this.products;

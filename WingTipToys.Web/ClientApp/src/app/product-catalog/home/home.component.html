@@ -19,6 +19,7 @@
         <app-main-content 
           [products]="products$ | async"
           [selectedProductTypeId]="selectedProductTypeId"
+          (addProductId)="addProductToCart($event)">
         >
         </app-main-content>
       </div>
