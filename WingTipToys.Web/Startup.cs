@@ -28,6 +28,7 @@ namespace WingTipToys.Web
             // Add dependencies
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IProductService, ProductService>();
+            services.AddSingleton<IShoppingCartService, ShoppingCartService>();
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
