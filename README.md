@@ -9,7 +9,7 @@ Angular in particular, an opensource JavaScript framework designed for building 
 ## Prerequisites:
 - Visual Studio 2019
 - Visual Studio Code (optional for developing the ClientApp)
-- .NET Core 3.1
+- .NET Core 3.1 (https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - Node.js (https://nodejs.org/en/)
 - Angular installed (in command prompt run this statement: `npm install -g @angular/cli`)
 
